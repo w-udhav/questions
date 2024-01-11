@@ -8,7 +8,7 @@ function App() {
         return (
           <div
             key={index}
-            className="flex flex-col gap-3 border-b last:border-none p-4 rounded-xl "
+            className="flex flex-col gap-3 border-b last:border-none p-4 rounded-xl break-words"
             style={{
               boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
             }}
@@ -17,8 +17,10 @@ function App() {
               <h2 className="text-2xl font-bold text-zinc-800">
                 <span>{index + 1}</span>. {item?.Question}
               </h2>
-              <p className="px-2 py-1 rounded-lg bg-zinc-200 w-max text-sm font-semibold text-amber-500 tracking-wide uppercase">
-                {item?.Topic}
+              <p className="w-full">
+                <span className="px-2 py-1 rounded-lg bg-zinc-200 text-sm font-semibold text-amber-500 tracking-wide uppercase">
+                  {item?.Topic}
+                </span>
               </p>
             </div>
             <ol className="list-item">
