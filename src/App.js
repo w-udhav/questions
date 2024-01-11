@@ -1,4 +1,3 @@
-import "./App.css";
 import { data, sheet1 } from "./data";
 
 function App() {
@@ -28,7 +27,7 @@ function App() {
               <li>C. {item["Option C"] && item["Option C"]}</li>
               <li>D. {item["Option D"] && item["Option D"]}</li>
             </ol>
-            <p className="px-2 py-1 rounded-lg bg-blue-200 w-max text-sm font-semibold tracking-wide">
+            <p className="px-2 py-1 rounded-lg bg-blue-200 text-sm font-semibold tracking-wide">
               {item?.Answer}
             </p>
           </div>
